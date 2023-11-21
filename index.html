@@ -6,29 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoGame API</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/game.js" defer></script>
+    <script src="./js/movie.js" defer></script>
 </head>
 
 <body>
-    <h1>VideoGame API</h1>
+    <h1>Movie API</h1>
     <div>
         <form>
             <p>
-                <label for="title">Enter a game title</label>
+                <label for="title">Enter a movie title</label>
                 <input type="text" id="title" class="title" required>
             </p>
 
             <p>
-                <label for="platform">Choose a platform:</label>
-                <select id="platform" name="platform">
-                    <option value="playstation">PlayStation</option>
-                    <!-- 6 -->
-                    <option value="macintosh">Macintosh</option>
-                    <!-- 74 -->
-                    <option value="windows">Windows</option>
-                    <!-- 3 -->
-                </select>
-
+                <label for="year">provide a year</label>
+                <input type="number" id="year" min="1900" max="2099"/>
             </p>
 
             <p>
