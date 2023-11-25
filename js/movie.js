@@ -58,6 +58,9 @@ function fetchResults(event)
             const writer = document.createElement("p");
             writer.textContent = `Writers: ${json.Writer}`;
             results.appendChild(writer);
+            const studentInfo = document.createElement("p")
+            studentInfo.textContent = "Made by Nathan Marino 200527317";
+
             
             for (let i = 0; i < json.Ratings.length;i++)
             {
@@ -68,6 +71,7 @@ function fetchResults(event)
             const img = document.createElement('img');
             img.src = json.Poster;
             results.appendChild(img);
+            results.appendChild(studentInfo);
 
         }
 
